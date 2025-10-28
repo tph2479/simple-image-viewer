@@ -17,7 +17,9 @@ public:
   ~MainWindow();
 
 protected:
-    void keyPressEvent(QKeyEvent *event) override;
+  void keyPressEvent(QKeyEvent *event) override;
+  void resetAppState();
+  void uptime();
 
 private:
   Ui::MainWindow *ui;
