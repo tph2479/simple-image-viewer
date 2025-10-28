@@ -3,6 +3,5 @@
   "name": "simple-image-viewer",
   "version-string": "0.0.1",
   "dependencies": [
-    "fmt"
   ]
 }

@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.19)
 project(simple-image-viewer LANGUAGES CXX)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
-find_package(fmt CONFIG REQUIRED)
 
 qt_standard_project_setup()
 
@@ -23,7 +22,6 @@ target_link_libraries(simple-image-viewer
     PRIVATE
         Qt::Core
         Qt::Widgets
-        fmt::fmt
 )
 
 include(GNUInstallDirs)

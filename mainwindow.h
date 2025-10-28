@@ -9,15 +9,18 @@ class MainWindow;
 }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
-{
-    Q_OBJECT
+class MainWindow : public QMainWindow {
+  Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+  MainWindow(QWidget *parent = nullptr);
+  ~MainWindow();
+
+protected:
+    void keyPressEvent(QKeyEvent *event) override;
 
 private:
-    Ui::MainWindow *ui;
+  Ui::MainWindow *ui;
+  bool shall_quit;
 };
 #endif // MAINWINDOW_H
